@@ -1,0 +1,97 @@
+.content-View {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    
+}
+.contentBar {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    border-color:#45a049; 
+  
+    border-width: 0px 0px 3px 0px;
+    justify-content: space-between;
+  
+}
+.contentBar2{
+  margin: 0%;
+  padding: 0%;
+  padding-left: 1%;
+  padding-right: 1%;
+  display: flex;
+  flex-direction: row;
+  border-color:#45a049; 
+  justify-content: space-between;
+
+}
+.subjectTitle {
+    color: #45a049;
+    font-style: italic;
+    font-size: large;
+    padding: 0%;
+    margin: 0%;
+}
+.title h1 {
+    color: #45a049;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: larger;
+    text-shadow: 1px 1px 4px rgba(221, 51, 239, 0.5);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+    padding-left: 2%;
+    font-size: larger;
+    font-style: italic;
+    color: #45a049;
+}
+.greenButton {
+    background-color: #45a049;
+
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    gap: 5px;
+    border-radius: 0% 20% 0% 0%;   
+} 
+.buttonDiv {
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+@media print {
+    /* Hide everything except the main content */
+   
+  
+    main {
+      visibility: visible;
+   
+     
+    }
+  
+   
+  
+    /* Optionally, you can add more styles to improve the printed layout */
+    Header, Footer {
+        visibility: hidden;
+    }
+  Header {
+    display: none;
+  }
+ 
+  }

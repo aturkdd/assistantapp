@@ -1,0 +1,29 @@
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #969494;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #fbf5f5;
+    color:#191718;
+    opacity: 30%;
+    }
+
+    .col-1 {
+      background-color:  #f1ebf2;;
+      opacity: 90%;
+    }
+
+    .col-2 {
+      background-color: #f1ebf2;
+      opacity: 50%;
+    }
+
+   

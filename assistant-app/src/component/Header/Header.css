@@ -1,0 +1,162 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  
+}
+
+.logo {
+  width: 150px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+nav ul li {
+  position: relative;
+}
+
+
+
+nav ul li:after {
+  content: "";
+  position: absolute;
+  bottom: -5px; 
+  left: 0;
+  right: 0;
+  height: 3px; 
+  background-color: #760C7A;
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out;
+}
+
+nav ul li:hover:after {
+  opacity: 1; 
+}
+
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #760C7A;
+}
+
+.standardButton {
+  background-color: #760C7A;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.standardButton:hover {
+  background-color: #5a085e;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.headerButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav {
+  display: flex;
+}
+
+.closeSidebar {
+  display: none;
+}
+.sidebarButton{
+  display: none;
+}
+@media (max-width: 768px) {
+  .headerContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  nav.open {
+    right: 0;
+  }
+  .logo  img{
+    height: 100%;
+    margin: 0%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hideOnMobile {
+    display: none;
+  }
+
+  .closeSidebar {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-self: flex-end;
+    position: absolute;
+  }
+
+  .sidebarButton {
+    display: block;
+  }
+}

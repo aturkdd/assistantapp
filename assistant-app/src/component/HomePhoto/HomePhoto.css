@@ -1,0 +1,96 @@
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(45deg, #c18fc2, #760c7a, #c18fc2, #760c7a);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  width: 100%;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #130114;
+  border-style: hidden;
+  overflow: hidden;
+  gap: 10px;
+  position: relative;
+  color: white;
+  height: 80vh;
+  width: 100%;
+}
+
+.content {
+  z-index: 2;
+  padding: 40px;
+  width: 50%;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.curvedLine {
+  width: 60%;
+  height: 30px;
+  padding: 0px;
+  background-color: unset;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px 0px 0px 0px;
+  border-radius: 0% 100% 0% 0%;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

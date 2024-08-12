@@ -1,0 +1,60 @@
+/* Notification.css */
+.notification {
+  
+    width: auto;
+    padding: 1rem;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    position: relative; /* Make it relative to enable absolute positioning */
+    animation: moveRightToLeft 500ms linear 1; /* Apply the animation */
+    
+   
+   
+    
+  }
+  .move {
+    z-index: 1000;
+    opacity: 80%;
+    width:auto;
+    position: fixed;
+    top: 30%;
+    justify-content:flex-end;
+    left: 85%;
+    
+    
+    
+  }
+  @keyframes moveRightToLeft {
+    0% {
+      left: 100%; /* Start off-screen to the right */
+    }
+    100% {
+      left: 0%; /* End at the left edge of the viewport */
+    }
+  }
+  .hidden {
+    display: none;
+  }
+  
+  .notification.success {
+    visibility: visible;
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .notification.failure {
+    visibility: visible;
+    background-color: #f59099;
+    color: #721c24;
+  }
+  
+  /* .notification button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+  } */
+  

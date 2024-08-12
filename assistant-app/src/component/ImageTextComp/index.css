@@ -1,0 +1,23 @@
+.comp-container {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    padding: 20px;
+}
+
+.comp-container  p {
+    flex: 1;
+}
+.comp-container  img {
+    height: auto;
+    flex-shrink: 0;
+    max-width: 70%;
+    margin : 1%;
+}
+
+@media (max-width: 1000px) {
+    .comp-container{
+        flex-direction: column !important;
+    }
+    
+}

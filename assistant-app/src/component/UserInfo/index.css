@@ -1,0 +1,17 @@
+.pInfo {
+    padding : 0.5%;
+    margin : 1%;
+    color: #1C923B;
+    
+    font-size :1rem;
+   }
+   .i_UserInfo {
+    border-width:0px 0px 1px 0px ;
+ border-color: var(--dark-green-color);
+    border-style: dashed;
+    padding-left: 10%;
+  
+    color: black;
+  
+
+   }
